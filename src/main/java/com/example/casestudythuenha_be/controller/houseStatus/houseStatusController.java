@@ -1,7 +1,8 @@
 package com.example.casestudythuenha_be.controller.houseStatus;
 
-import com.codegym.webthuenha.model.HouseStatus;
-import com.codegym.webthuenha.service.housestatus.IHouseStatusService;
+
+import com.example.casestudythuenha_be.model.HouseStatus;
+import com.example.casestudythuenha_be.service.houseStartus.IHouseStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
