@@ -1,14 +1,8 @@
 package com.example.casestudythuenha_be.configuration.custom;
 
-<<<<<<< HEAD
-import com.codegym.webthuenha.service.jwt.JwtService;
-import com.codegym.webthuenha.service.user.IUserService;
-=======
-//import com.codegym.webthuenha.service.jwt.JwtService;
-//import com.codegym.webthuenha.service.user.IUserService;
+
 import com.example.casestudythuenha_be.service.jwt.JwtService;
 import com.example.casestudythuenha_be.service.user.IUserService;
->>>>>>> 42edcd4734cc320727e7d692eb7ad4378eafeb47
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -62,8 +56,4 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         return null;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 42edcd4734cc320727e7d692eb7ad4378eafeb47

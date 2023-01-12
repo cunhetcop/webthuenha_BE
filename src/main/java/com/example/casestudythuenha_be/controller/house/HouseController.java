@@ -1,16 +1,14 @@
 package com.example.casestudythuenha_be.controller.house;
-
-
-import com.codegym.webthuenha.model.DTO.HouseDTO;
-import com.codegym.webthuenha.model.EmailDetails;
-import com.codegym.webthuenha.model.House;
-import com.codegym.webthuenha.model.HouseStatus;
-import com.codegym.webthuenha.model.Image;
-import com.codegym.webthuenha.service.email.EmailService;
-import com.codegym.webthuenha.service.house.IHouseService;
-import com.codegym.webthuenha.service.housestatus.IHouseStatusService;
-import com.codegym.webthuenha.service.image.IImageService;
-import com.codegym.webthuenha.service.user.IUserService;
+import com.example.casestudythuenha_be.model.DTO.HouseDTO;
+import com.example.casestudythuenha_be.model.EmailDetails;
+import com.example.casestudythuenha_be.model.House;
+import com.example.casestudythuenha_be.model.HouseStatus;
+import com.example.casestudythuenha_be.model.Image;
+import com.example.casestudythuenha_be.service.email.EmailService;
+import com.example.casestudythuenha_be.service.house.IHouseService;
+import com.example.casestudythuenha_be.service.houseStartus.IHouseStatusService;
+import com.example.casestudythuenha_be.service.image.IImageService;
+import com.example.casestudythuenha_be.service.user.IUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -35,7 +33,6 @@ public class HouseController {
 
     @Autowired
     EmailService emailService;
-
     @Autowired
     IHouseService houseService;
 

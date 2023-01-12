@@ -1,7 +1,6 @@
 package com.example.casestudythuenha_be.service.image;
-
-import com.codegym.webthuenha.model.Image;
-import com.codegym.webthuenha.repository.IImageRepository;
+import com.example.casestudythuenha_be.model.Image;
+import com.example.casestudythuenha_be.repository.IImageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

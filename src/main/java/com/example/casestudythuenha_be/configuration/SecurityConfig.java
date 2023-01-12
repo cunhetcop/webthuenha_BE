@@ -1,7 +1,6 @@
 package com.example.casestudythuenha_be.configuration;
-
-import com.codegym.webthuenha.configuration.custom.JwtAuthenticationFilter;
-import com.codegym.webthuenha.service.user.IUserService;
+import com.example.casestudythuenha_be.configuration.custom.JwtAuthenticationFilter;
+import com.example.casestudythuenha_be.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
@@ -17,11 +16,8 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.cors.CorsConfiguration;
 
 @EnableWebSecurity
-<<<<<<< HEAD
+
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-=======
-public class    SecurityConfig extends WebSecurityConfigurerAdapter {
->>>>>>> 42edcd4734cc320727e7d692eb7ad4378eafeb47
     @Autowired
     private IUserService userService;
     @Autowired
@@ -63,8 +59,4 @@ public class    SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userService).passwordEncoder(NoOpPasswordEncoder.getInstance());
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 42edcd4734cc320727e7d692eb7ad4378eafeb47

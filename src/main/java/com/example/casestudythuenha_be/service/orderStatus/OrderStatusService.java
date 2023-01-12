@@ -1,8 +1,6 @@
 package com.example.casestudythuenha_be.service.orderStatus;
-
-import com.codegym.webthuenha.model.OrderStatus;
-import com.codegym.webthuenha.repository.IOrderStatusRepository;
 import com.example.casestudythuenha_be.model.OrderStatus;
+import com.example.casestudythuenha_be.repository.IOrderStatusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
