@@ -55,24 +55,42 @@ public class LoginController {
             return ResponseEntity.ok("Not Found User");
         }
     }
+//    @PostMapping("/register")
+//    public ResponseEntity<User> register(@RequestBody UserRegisterDTO user) {
+//        if (userService.checkDoubleUser(user.getUserName()).isPresent()){
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//        }
+//        User users = new User();
+//        users.setUsername(user.getUserName());
+//        users.setPassword(user.getPassword());
+//        users.setPhoneNumber(user.getPhone());
+//        users.setEmail(user.getEmail());
+//        users.setAvatar(iImageService.findById(Long.parseLong("1")).get().getImageName());
+//        String role = "2";
+//        Long role1 = Long.parseLong(role);
+//        users.setRole(roleService.findById(role1).get());
+//        userService.save(users);
+//
+//        return new ResponseEntity<>(userService.save(users),HttpStatus.OK);
+//    }
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody UserRegisterDTO user) {
-        if (userService.checkDoubleUser(user.getUserName()).isPresent()){
+        if (userService.checkDoubleUser(user.getUserName()).isPresent()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         User users = new User();
-        users.setUsername(user.getUserName());
-        users.setPassword(user.getPassword());
-        users.setPhoneNumber(user.getPhone());
-        users.setEmail(user.getEmail());
+        users.setUsername((user.getUserName()));
+        users.setPassword((user.getPassword()));
+        users.setPhoneNumber((user.getPhone()));
+        users.setEmail((user.getEmail()));
         users.setAvatar(iImageService.findById(Long.parseLong("1")).get().getImageName());
         String role = "2";
         Long role1 = Long.parseLong(role);
         users.setRole(roleService.findById(role1).get());
         userService.save(users);
-
-        return new ResponseEntity<>(userService.save(users),HttpStatus.OK);
+        return new ResponseEntity<>(userService.save(users), HttpStatus.OK);
     }
+
 
     @PostMapping("/register1")
     public ResponseEntity<?> register1(@RequestBody SocialDTO socialDTO) {
